@@ -8,7 +8,9 @@ text {
 
   overflow:hidden;
   white-space:nowrap;
+  background-color: rgba(0,0,0, 0.5);
 }
+
 
 text:first-of-type {    
   animation: showup 7s infinite;

@@ -3173,12 +3173,12 @@ input, select, textarea {
 			height: inherit;
 			line-height: inherit;
 			margin-left: 1.5em;
-			overflow: hidden;
+			/*overflow: hidden;*/
 			padding-left: 1.5em;
 		}
 
 			#header .links ul li {
-				border-left: solid 1px rgba(160, 160, 160, 0.3);
+				border-left: solid 0px rgba(160, 160, 160, 0.3);
 				line-height: 1;
 				margin-left: 1em;
 				padding-left: 1em;
