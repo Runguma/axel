@@ -1,0 +1,21 @@
+
+function toggleModal() {
+  // var modal = document.querySelector("#gfx-modal");
+  // var modalOverlay = document.querySelector("#gfx-modal-overlay");
+
+  
+  // modal.classList.toggle("closed");
+  // modalOverlay.classList.toggle("closed");
+  
+  jQuery('#gfx-modal').modal('toggle');
+
+}
+
+jQuery(document).ready(function() {
+        var closeButton = document.querySelector("#close-button");
+        jQuery("#latest-contributions").simplyScroll({frameRate:60});
+        if(closeButton) closeButton.addEventListener("click",toggleModal);
+		
+		jQuery('a[href*="app.powerbi.com"]').attr("target","_blank");
+		jQuery('a[href*="refugee-funding-tracker.org"]').attr("target","_blank");
+    });
