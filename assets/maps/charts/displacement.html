@@ -1,0 +1,84 @@
+<html>
+   <head>
+      <title>Google Charts Tutorial</title>
+      <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+      </script>
+      <script type = "text/javascript">
+         google.charts.load('current', {packages: ['corechart']});     
+      </script>
+   </head>
+   
+   <body>
+      <div id = "container" style = "width: 100%; height: 100%; margin: 0 auto">
+      </div>
+      <script language = "JavaScript">
+         function drawChart() {
+            // Define the chart to be drawn.
+            var data = google.visualization.arrayToDataTable([
+               ['Year', 'Dadaab', 'Kakuma', 'Total'],
+               ['1990',0,0,14249],
+['1990',0,0,14249],
+['1991',32421,,120163],
+['1992',111789,12000,402194],
+['1993',98557.5,35000,301595],
+['1994',85326,27825,252423],
+['1995',117000,44743,234665],
+['1996',134237,33836,223640],
+['1997',125000,62836,232097],
+['1998',106000,58000,238187],
+['1999',110000,90500,223696],
+['2000',126000,65000,206106],
+['2001',130000,80258,239221],
+['2002',136455,123258,233671],
+['2003',140000,86000,237512],
+['2004',138620,87690,239835],
+['2005',139940,94680,251271],
+['2006',165582,90457,272531],
+['2007',171957,69400,265729],
+['2008',235453,45638,320605],
+['2009',275695,60000,358928],
+['2010',292586,100574.5,402905],
+['2011',463507,81149,566487],
+['2012',469910,101191,564933],
+['2013',407207,128560,534938],
+['2014',357345,177454,551352],
+['2015',346428,183489,553912],
+['2016',275467,163299,451099],
+['2017',260923,184938,431880],
+['2018',209606,186320,421248],
+['2019',212935,189692,479194],
+['2020',217511,196050,494585]
+
+
+
+               
+     
+            ]);
+              
+            // Set chart options
+            var options = {
+               colors: ['Darkblue', 'blue', 'lightblue'],
+              
+               vAxis: {title: 'Total Refugees'},
+               hAxis: {title: 'Year'},
+               seriesType: 'area',
+        
+
+               
+               series: {2: {type: 'line'}},
+               series: {
+            0: { lineWidth: 0 },
+            1: { lineWidth: 0 },
+            2: { lineWidth: 0 }
+        },
+
+            };
+
+            // Instantiate and draw the chart.
+            var chart = new google.visualization.ComboChart(document.getElementById('container'));
+            chart.draw(data, options);
+         }
+         google.charts.setOnLoadCallback(drawChart);
+      </script>
+   </body>
+</html>
